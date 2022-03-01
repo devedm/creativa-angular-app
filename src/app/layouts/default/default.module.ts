@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DefaultComponent } from './default.component';
+import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
-import { AppRoutingModule } from 'src/app/app-routing.module';
-
-
+import { DefaultComponent } from './default.component';
 
 @NgModule({
   declarations: [
-    DefaultComponent
+    DefaultComponent,
   ],
   imports: [
     CommonModule,
-    AppRoutingModules,
+    RouterModule,
     SharedModule
   ]
 })
+
 export class DefaultModule { }
